@@ -1,0 +1,33 @@
+{
+  "name": "codex-heartbeat",
+  "version": "0.1.0",
+  "description": "Project heartbeat workflows for keeping multiple Codex workspaces moving safely.",
+  "author": {
+    "name": "Bill"
+  },
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "heartbeat",
+    "automation",
+    "projects",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Heartbeat",
+    "shortDescription": "Set up safe recurring project check-ins.",
+    "longDescription": "Codex Heartbeat helps Codex maintain several projects or sub-projects with tiny HEARTBEAT files, bounded task lists, and automation prompts that continue work without losing control of scope.",
+    "developerName": "Bill",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Automation"
+    ],
+    "defaultPrompt": [
+      "Set up heartbeats for this repo.",
+      "Add a sub-project heartbeat.",
+      "Review my heartbeat config."
+    ]
+  }
+}

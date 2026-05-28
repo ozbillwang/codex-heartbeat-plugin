@@ -1,0 +1,43 @@
+{
+  "defaults": {
+    "cadence": "30m",
+    "ack": "HEARTBEAT_OK",
+    "validators": [
+      "npm test"
+    ],
+    "stopIf": [
+      "Secrets, credentials, production data, billing, or destructive actions are required.",
+      "The same validator fails twice for the same reason.",
+      "The next step depends on a product or architecture decision."
+    ]
+  },
+  "projects": [
+    {
+      "name": "main-project",
+      "path": ".",
+      "cadence": "30m",
+      "tasks": [
+        {
+          "name": "continue-next-safe-task",
+          "interval": "30m",
+          "prompt": "Review the local task list and advance one small safe task. Run the narrowest relevant validator."
+        }
+      ]
+    },
+    {
+      "name": "docs",
+      "path": "docs",
+      "cadence": "2h",
+      "validators": [
+        "npm run lint:docs"
+      ],
+      "tasks": [
+        {
+          "name": "docs-maintenance",
+          "interval": "2h",
+          "prompt": "Improve or verify one stale documentation item. Keep edits small and cite the source file."
+        }
+      ]
+    }
+  ]
+}
