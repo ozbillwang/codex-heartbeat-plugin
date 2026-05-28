@@ -1,0 +1,20 @@
+{
+  "name": "codex-heartbeat-marketplace",
+  "interface": {
+    "displayName": "Codex Heartbeat"
+  },
+  "plugins": [
+    {
+      "name": "codex-heartbeat",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-heartbeat"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
