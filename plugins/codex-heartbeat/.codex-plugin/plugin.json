@@ -24,6 +24,9 @@
       "Write",
       "Automation"
     ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
     "defaultPrompt": [
       "Set up heartbeats for this repo.",
       "Add a sub-project heartbeat.",
