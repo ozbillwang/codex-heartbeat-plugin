@@ -1,6 +1,6 @@
 {
   "name": "codex-heartbeat",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Project heartbeat workflows for keeping multiple Codex workspaces moving safely.",
   "author": {
     "name": "Bill"
